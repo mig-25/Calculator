@@ -50,7 +50,7 @@ namespace Calculator
         private void operator_click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
-
+            
             if (resultValue != 0)
             {
                 btnEquals.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
@@ -66,20 +66,21 @@ namespace Calculator
                 labelCurrentOperation.Content = resultValue + " " + operationPerformed;
                 isOperationPerformed = true;
             }
+           
         }
 
-        private void btnClearEntry(object sender, RoutedEventArgs e)
+        private void btnClearEntry_Click(object sender, RoutedEventArgs e)
         {
             textBox_Result.Text = "0";
         }
 
-        private void btnClear(object sender, RoutedEventArgs e)
+        private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             textBox_Result.Text = "0";
             resultValue = 0;
         }
 
-        private void btnEquals(object sender, RoutedEventArgs e)
+        private void btnEquals_Click(object sender, RoutedEventArgs e)
         {
             switch (operationPerformed)
             {
@@ -126,5 +127,84 @@ namespace Calculator
             }
         }
 
+        private void btn7_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn8_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn9_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn5_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn6_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn0_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnPlus_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMinus_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnTimes_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDivide_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDecimal_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBox_Result_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

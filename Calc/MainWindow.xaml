@@ -45,12 +45,13 @@
         <Button x:Name="btnMinus" Grid.Row="3" Grid.Column="3" Click="btnMinus_Click">-</Button>
         <Button x:Name="btnTimes" Grid.Row="4" Grid.Column="3" Click="btnTimes_Click">*</Button>
         <Button x:Name="btnDivide" Grid.Row="5" Grid.Column="3" Click="btnDivide_Click">/</Button>
-        <Button x:Name="btnDecimal" Grid.Row="6" Grid.Column="2" Click="btnEquals_Click">,</Button>
+        <Button x:Name="btnDecimal" Grid.Row="6" Grid.Column="2" Click="btnDecimal_Click">,</Button>
 
         <Button x:Name="btnEquals" Grid.Row="6" Grid.Column="3" Click="btnEquals_Click">=</Button>
 
         <!--Clear Buttons-->
         <Button x:Name="btnClearEntry" Grid.Row="2" Grid.Column="0" Click="btnClearEntry_Click">CE</Button>
+        
         <Button x:Name="btnClear" Grid.Row="2" Grid.Column="1" Click="btnClear_Click">C</Button>
         <Button x:Name="btnBackSpace" Grid.Row="2" Grid.Column="2" Content="&lt;==" Click="btnBackSpace_Click"/>
 
@@ -59,7 +60,7 @@
 
         <!--Display Buttons-->
         <TextBox x:Name="textBox_Result" IsReadOnly="True" TextAlignment="Right" VerticalAlignment="Bottom" FontSize="30" BorderThickness="0
-                 " Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Background="LightGray" Foreground="YellowGreen">0</TextBox>
+                 " Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Background="LightGray" Foreground="YellowGreen" TextChanged="textBox_Result_TextChanged">0</TextBox>
 
         <!--Result Label-->
         <Label x:Name="labelCurrentOperation" Visibility="Visible" HorizontalContentAlignment="Right" VerticalAlignment="Bottom" FontSize="30" BorderThickness="0
